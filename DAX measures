@@ -1,0 +1,31 @@
+Total Customers = DISTINCTCOUNT(marketing_campaign_cleaned[ID])
+Total Spend = SUM(marketing_campaign_cleaned[TotalSpend])
+Average Income = AVERAGE(marketing_campaign_cleaned[Income])
+
+Response Rate =
+DIVIDE(
+SUM(marketing_campaign_cleaned[Response]),
+COUNT(marketing_campaign_cleaned[ID])
+)
+
+Age Group =
+SWITCH(
+TRUE(),
+[Age] <= 25, "18-25",
+[Age] <= 35, "26-35",
+[Age] <= 45, "36-45",
+[Age] <= 55, "46-55",
+[Age] <= 65, "56-65",
+"65+"
+)
+
+Campaign Acceptance =
+SUM(marketing_campaign_cleaned[TotalCampaignsAccepted])
+
+Customer Segment =
+SWITCH(
+TRUE(),
+[TotalSpend] >= 1500,"High Value",
+[TotalSpend] >= 500,"Medium Value",
+"Low Value"
+)
