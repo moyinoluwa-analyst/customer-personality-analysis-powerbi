@@ -53,16 +53,6 @@ Provides insights into:
 * Customer Demographics
 * Product Spending Categories
 
-### Marketing Campaign Analysis
-
-Provides insights into:
-
-* Campaign Acceptance Rates
-* Customer Response Behavior
-* Segment Performance
-* Marketing Effectiveness
-
-
 
 ## Key Findings
 
@@ -81,6 +71,12 @@ Provides insights into:
 * Improve targeting of underperforming campaigns.
 * Develop retention strategies for high-spending customers.
 * Increase investment in the most responsive customer segments.
+
+## Dashboard Preview
+
+### Executive Dashboard
+
+![Executive Dashboard](screenshots/marketing_campaign_executive_dashboard.png)
 
 
 
